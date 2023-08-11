@@ -4,9 +4,13 @@ import './App.css'
 import { Plus } from 'react-feather';
 import styles from './styles/pages/home.module.css'
 import {Task} from './components/task/index'
+import { CreateTaskModal } from './components/createTaskModal/index';
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
 
 function App() {
-  const [count, setCount] = useState(0)
+  const isCreateTaskModalOpen = false;
   //espinha do projeto
   return (
     <div className="App">
@@ -25,7 +29,7 @@ function App() {
         
       </section>
 
-
+    <CreateTaskModal isOpen={isCreateTaskModalOpen}></CreateTaskModal>
 
     </div>
   )
