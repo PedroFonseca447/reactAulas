@@ -7,7 +7,7 @@ import {Task} from './components/task/index'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  //espinha do projeto
   return (
     <div className="App">
       <section className={styles.container}>
