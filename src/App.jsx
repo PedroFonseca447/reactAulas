@@ -1,15 +1,17 @@
 import {useState} from 'react'
-import {Task} from 'vite-project/src/components/task/index'
+import {Task} from './components/Task/index'
 import { Plus } from "react-feather"
-import { ITaskProps } from 'vite-project/src/components/Task/types'
+import { ITaskProps } from './components/Task/types'
  
 import styles from "./styles/pages/home.module.css"
  
-import { CreateTaskModal } from './components/Task'
+import { CreateTaskModal } from './components/CreateTaskModal'
  
 import Modal from "react-modal"
  
 Modal.setAppElement("#root")
+ 
+
 
 function App() {
   const isCreateTaskModalOpen = false;
