@@ -1,13 +1,15 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { Plus } from 'react-feather';
-import styles from './styles/pages/home.module.css'
-import {Task} from './components/task/index'
-import { CreateTaskModal } from './components/createTaskModal/index';
-import Modal from "react-modal";
-
-Modal.setAppElement("#root");
+import {useState} from 'react'
+import {Task} from 'vite-project/src/components/task/index'
+import { Plus } from "react-feather"
+import { ITaskProps } from 'vite-project/src/components/Task/types'
+ 
+import styles from "./styles/pages/home.module.css"
+ 
+import { CreateTaskModal } from './components/Task'
+ 
+import Modal from "react-modal"
+ 
+Modal.setAppElement("#root")
 
 function App() {
   const isCreateTaskModalOpen = false;
